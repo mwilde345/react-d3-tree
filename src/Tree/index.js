@@ -259,7 +259,8 @@ export default class Tree extends React.Component {
     const data = clone(this.state.data);
     const matches = this.findNodesById(nodeId, data, []);
     const targetNode = matches[0];
-
+    evt.persist();
+    
     if (this.props.collapsible && !this.state.isTransitioning) {
       if (targetNode._collapsed) {
         this.expandNode(targetNode);
