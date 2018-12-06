@@ -141,6 +141,7 @@ export default class Tree extends React.Component {
     const d = Array.isArray(data) ? data : [data];
     return d.map(node => {
       node.id = uuid.v4();
+      node.name += 'test';
       // If the node's `_collapsed` state wasn't defined by the data set -> default to `false`.
       if (node._collapsed === undefined) {
         node._collapsed = false;
