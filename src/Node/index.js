@@ -80,6 +80,9 @@ export default class Node extends React.Component {
   };
 
   handleClick = evt => {
+    evt.persist();
+    console.log('persisting in Node handleClick');
+    console.log(evt.shiftKey);
     this.props.onClick(this.props.nodeData.id, evt);
   };
 
