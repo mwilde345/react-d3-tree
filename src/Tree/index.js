@@ -259,9 +259,9 @@ export default class Tree extends React.Component {
     const data = clone(this.state.data);
     const matches = this.findNodesById(nodeId, data, []);
     const targetNode = matches[0];
-    evt.persist();
-    console.log('persisted in handleNodeToggle');
-    console.log(evt.shiftKey);
+    // evt.persist();
+    // console.log('persisted in handleNodeToggle');
+    // console.log(evt.shiftKey);
 
     if (this.props.collapsible && !this.state.isTransitioning) {
       if (targetNode._collapsed) {
@@ -291,9 +291,9 @@ export default class Tree extends React.Component {
    * @return {void}
    */
   handleOnClickCb = (targetNode, evt) => {
-    evt.persist();
-    console.log('persisted in handleOnClickCb');
-    console.log(evt.shiftKey);
+    // evt.persist();
+    // console.log('persisted in handleOnClickCb');
+    // console.log(evt.shiftKey);
     const { onClick } = this.props;
     if (onClick && typeof onClick === 'function') {
       onClick(clone(targetNode), evt);
