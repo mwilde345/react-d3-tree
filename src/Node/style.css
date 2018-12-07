@@ -1,6 +1,6 @@
 .nodeBase {
   cursor: pointer;
-  fill: #777;
+  fill: red;
   stroke: #000;
   stroke-width: 2;
 }
@@ -19,7 +19,7 @@
 }
 
 .nodeAttributesBase {
-  fill: #777;
+  fill: red;
   stroke: #777;
   stroke-width: 1;
   font-size: smaller;

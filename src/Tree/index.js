@@ -34,9 +34,6 @@ export default class Tree extends React.Component {
   componentDidMount() {
     this.bindZoomListener(this.props);
     this.internalState.initialRender = false;
-    this.state.data = {
-      name: 'yep',
-    };
   }
 
   componentDidUpdate(prevProps) {
